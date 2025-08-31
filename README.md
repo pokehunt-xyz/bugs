@@ -1,17 +1,22 @@
-# PokéHunt Bugs
+# PokéHunt
 
-This is the official place to report a bug with PokéHunt and making a feature request. If you do not have a GitHub account, you can always DM one of the owners and they can open one for you. Note that for every new/unknown bug you report, you **might** get a small reward (depending on the severity of the bug).
+Welcome to PokéHunt, the Best Pokémon experience on Discord and Telegram.
 
-Please note that missing or wrong Pokémon data (such as moves, images, etc) do not count as a "bug" with the bot but an issue with data, but they can be reported here nonetheless.
+On our GitHub you can see various repositories containing the code we use for our bot(s) and website.
 
-In case of bugs that should not be made public (such as bot-breaking issues, security issues, etc), please ALWAYS send an email to `support@pokehunt.xyz` and/or DM the owner.
+## Repositories
 
-## Where to report
+This repository is the general repository and can be used to report bugs and open feature requests.
 
-- If you know for sure the the bug is with the Discord bot (**and it is NOT a bug in the Telegram bot**), please report it [here](https://github.com/pokehunt-xyz/discord/issues)
+- The Discord bot can be found [here](https://github.com/pokehunt-xyz/discord)
+- The Telegram bot can be found [here](https://github.com/pokehunt-xyz/telegram)
+- The Website can be found [here](https://github.com/pokehunt-xyz/website)
 
-- If you know for sure the bug is with the Telegram bot (**and it is NOT a bug in the Discord bot**), please report it [here](https://github.com/pokehunt-xyz/telegram/issues)
+## Reporting bugs
 
-- If you know for sure the bug is with the website, please report it [here](https://github.com/pokehunt-xyz/website/issues)
+You can use this GitHub repository to create an issue/file a bug report. If you do not have a GitHub account, you can always DM one of the owners of PokéHunt and they can open one for you. For every new/unknown bug you report, you **might** get a small reward (depending on the severity of the bug).
 
-- In all other cases or if you are unsure, report it [here](https://github.com/pokehunt-xyz/bugs/issues)
+Please note that missing or wrong Pokémon data (such as moves, images, etc) do not count as a "bug" with the bot but an issue with data.
+- Report missing/wrong moves [here](https://github.com/pokehunt-xyz/pokehunt-xyz/issues/5)
+
+In case of bugs that should not be made public (such as bot-breaking issues, security issues, etc), please ALWAYS send an email to `support@pokehunt.xyz` and/or DM the owner instead of creating a (public accessible) bug report here.

@@ -12,9 +12,9 @@ body:
     attributes:
       label: Before submitting, I have made sure to
       options:
-        - label: Search [existing issues](https://github.com/pokehunt-xyz/bugs/search?q=&type=issues) and [discussions](https://github.com/pokehunt-xyz/bugs/search?q=&type=discussions).
+        - label: Search [existing issues](https://github.com/pokehunt-xyz/pokehunt-xyz/search?q=&type=issues) and [discussions](https://github.com/pokehunt-xyz/pokehunt-xyz/search?q=&type=discussions).
           required: true
-        - label: This is a bug, and NOT a feature request. Feature requests can be made [here](https://github.com/pokehunt-xyz/bugs/discussions/new?category=feature-requests)
+        - label: This is a bug, and NOT a feature request. Feature requests can be made [here](https://github.com/pokehunt-xyz/pokehunt-xyz/discussions/new?category=feature-requests)
           required: true
   - type: checkboxes
     id: affected
