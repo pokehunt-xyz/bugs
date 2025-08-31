@@ -24,7 +24,7 @@ jobs:
               "Discord bot": "discord",
               "Telegram bot": "telegram",
               "Website": "website",
-              "Pokémon data (names, moves, images, etc.)": "pokemon-data"
+              "Pokémon data (names, moves, images, etc.)": "data"
             };
 
             // Regex to detect checked items like "- [x] Discord bot"

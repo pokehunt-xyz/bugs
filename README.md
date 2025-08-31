@@ -2,7 +2,7 @@
 
 This is the official place to report a bug with PokéHunt and making a feature request. If you do not have a GitHub account, you can always DM one of the owners and they can open one for you. Note that for every new/unknown bug you report, you **might** get a small reward (depending on the severity of the bug).
 
-Please note that missing/wrong Pokémon data (such as moves, images, etc) do not count as a "bug" with the bot but an issue with data, but they can be reported here nonetheless.
+Please note that missing or wrong Pokémon data (such as moves, images, etc) do not count as a "bug" with the bot but an issue with data, but they can be reported here nonetheless.
 
 In case of bugs that should not be made public (such as bot-breaking issues, security issues, etc), please ALWAYS send an email to `support@pokehunt.xyz` and/or DM the owner.
 
