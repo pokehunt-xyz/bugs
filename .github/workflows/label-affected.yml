@@ -1,0 +1,54 @@
+name: Label issue from checkboxes
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  add-labels:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Apply labels based on checkboxes
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const body = context.payload.issue.body || "";
+            const issueNumber = context.payload.issue.number;
+            const { owner, repo } = context.repo;
+
+            // Map form option text -> labels in your repo
+            const mapping = {
+              "Discord bot": "discord",
+              "Telegram bot": "telegram",
+              "Website": "website",
+              "Pokémon data (names, moves, images, etc.)": "pokemon-data"
+            };
+
+            // Regex to detect checked items like "- [x] Discord bot"
+            function escapeRegExp(string) {
+              return string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+            }
+
+            const labelsToAdd = [];
+            for (const [option, label] of Object.entries(mapping)) {
+              const taskPattern = new RegExp(`- \\[x\\]\\s*${escapeRegExp(option)}`, "i");
+              const bulletPattern = new RegExp(`(^|\\n)\\s*-\\s+${escapeRegExp(option)}(\\s|$)`, "i");
+              if (taskPattern.test(body) || bulletPattern.test(body)) {
+                labelsToAdd.push(label);
+              }
+            }
+
+            if (labelsToAdd.length > 0) {
+              console.log("Adding labels:", labelsToAdd);
+              await github.rest.issues.addLabels({
+                owner,
+                repo,
+                issue_number: issueNumber,
+                labels: labelsToAdd
+              });
+            } else {
+              console.log("No matching labels found.");
+            }
