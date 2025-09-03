@@ -11,6 +11,7 @@ This repository is the general repository and can be used to report bugs and ope
 - The Discord bot can be found [here](https://github.com/pokehunt-xyz/discord)
 - The Telegram bot can be found [here](https://github.com/pokehunt-xyz/telegram)
 - The Website can be found [here](https://github.com/pokehunt-xyz/website)
+- The Documentation can be found [here](https://github.com/pokehunt-xyz/documentation)
 
 ## Reporting bugs
 
